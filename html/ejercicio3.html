@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo Formulario # 3</title>
+</head>
+<body>
+
+  <h1>Formulario con restricciones</h1>
+  <form action="#" method="post">
+    <label for="account-type">Account Type:</label>
+    <select id="account-type" name="account-type">
+        <option value="Mr">Individual</option>
+        <option value="Ms">Entity</option>
+    </select><br>
+
+    <label for="first-name">First Name:</label>
+    <input type="text" id="first-name" name="first-name" pattern="^(Mr|Ms|Mrs) [A-Za-z]+ [A-Za-z]+ {0,1}" required  placeholder="Mr. John Smith"><br>
+
+    <label for="middle-name">Middle Name or Initial:</label>
+    <input type="text" id="middle-name" name="middle-name" pattern="[A-Z][a-z]" required placeholder="Ar"><br>
+
+    <label for="Last name">Last name:</label>
+    <input type="text" id="first-name" name="first-name" pattern="^(Mr|Ms|Mrs) [A-Za-z]+ [A-Za-z]+ {0,3}" required placeholder="Mr. John  Smith">
+
+<br>
+    <label for="suffix">Suffix:</label>
+    <select id="suffix" name="suffix">
+        <option value="Mr">Mr</option>
+        <option value="Ms">Ms</option>
+        <option value="Mrs">Mrs</option>
+    </select><br>
+
+    <label for="state">State:</label>
+    <select id="state" name="state">
+        <option value="Amazonas">Amazonas</option>
+        <option value="Antioquia">Antioquia</option>
+        <option value="Arauca">Arauca</option>
+        <option value="Atlántico">Atlántico</option>
+        <option value="Bolívar">Bolívar</option>
+        <option value="Boyacá">Boyacá</option>
+        <option value="Caldas">Caldas</option>
+        <option value="Caquetá">Caquetá</option>
+        <option value="Casanare">Casanare</option>
+        <option value="Cauca">Cauca</option>
+        <option value="Cesar">Cesar</option>
+        <option value="Chocó">Chocó</option>
+        <option value="Córdoba">Córdoba</option>
+        <option value="Cundinamarca">Cundinamarca</option>
+        <option value="Guainía">Guainía</option>
+        <option value="Guaviare">Guaviare</option>
+        <option value="Huila">Huila</option>
+        <option value="La Guajira">La Guajira</option>
+        <option value="Magdalena">Magdalena</option>
+        <option value="Meta">Meta</option>
+        <option value="Nariño">Nariño</option>
+        <option value="Norte de Santander">Norte de Santander</option>
+        <option value="Putumayo">Putumayo</option>
+        <option value="Quindío">Quindío</option>
+        <option value="Risaralda">Risaralda</option>
+        <option value="San Andrés y Providencia">San Andrés y Providencia</option>
+        <option value="Santander">Santander</option>
+        <option value="Sucre">Sucre</option>
+        <option value="Tolima">Tolima</option>
+        <option value="Valle del Cauca">Valle del Cauca</option>
+        <option value="Vaupés">Vaupés</option>
+        <option value="Vichada">Vichada</option>
+    </select><br>
+
+    <label for="zip-code">Zip Code:</label>
+    <input type="text" id="zip-code" name="zip-code" pattern="[0-9]{6}(-[0-9]{4})?" placeholder="12345-6789"><br>
+
+    <label for="home-phone">Home Phone:</label>
+    <input type="text" id="home-phone" name="home-phone" pattern="\+[0-9]{2}[0-9]{3}[0-9]{7}" required placeholder="+57 1 234 5678">
+    <br>
+
+    <label for="id-number">ID Number:</label>
+    <input type="text" id="id-number" name="id-number" pattern="^D[0-9]+$" required placeholder="D123"><br>
+
+    <label for="expiration-date">Expiration Date:</label>
+    <input type="text" id="expiration-date" name="expiration-date" pattern="^(0[1-9]|1[0-2])/(0[1-9]|[12][0-9]|3[01])/(20[2-9]\d{1})$" required required placeholder="mm/dd/yyyy"><br>
+
+    <input type="submit" value="Submit">
+</form>
+    
+</body>
+</html>
+
+
